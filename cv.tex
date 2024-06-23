@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 %	The MIT License (MIT)
 %
-%	Copyright (c) 2021 Jitin Nair
+%	Copyright (c) 2024 Yash Modi <yashnimeshmodi@gmail.com>
 %
 %	Permission is hereby granted, free of charge, to any person obtaining a copy
 %	of this software and associated documentation files (the "Software"), to deal
@@ -25,8 +25,8 @@
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
-% article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+% article class because we want to customize the page and not use a CV template fully
+\documentclass[a4paper,10.5pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -48,7 +48,7 @@
 %	PACKAGES
 %----------------------------------------------------------------------------------------
 \usepackage{url}
-\usepackage{parskip} 	
+\usepackage{parskip}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -59,7 +59,7 @@
 %tabularx environment
 \usepackage{tabularx}
 
-%for lists within experience section
+%for lists within the experience section
 \usepackage{enumitem}
 
 % centered version of 'X' col. type
@@ -97,39 +97,13 @@
 %debug page outer frames
 %\usepackage{showframe}
 
-
-% job listing environments
-\newenvironment{jobshort}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
-    }
-    {
-    \end{itemize}
-    \end{minipage}    
-    }
-
-
-
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
 \begin{document}
 
-% non-numbered pages
-\pagestyle{empty} 
+% plain numbered pages
+\pagestyle{plain} 
 
 %----------------------------------------------------------------------------------------
 %	TITLE
@@ -142,56 +116,145 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Yash Modi} \\[7pt]
+\href{https://github.com/yashnmodi}{\raisebox{-0.05\height}\faGithub\ yashnmodi} \ $|$ \ 
+\href{https://linkedin.com/in/yashnmodi}{\raisebox{-0.05\height}\faLinkedin\ yashnmodi} \ $|$ \ 
+%\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+\href{mailto:yashnimeshmodi@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ yashnimeshmodi@gmail.com} \ $|$ \ 
+\href{tel:+917383112237}{\raisebox{-0.05\height}\faMobile \ +91 738-311-2237} \\
+\end{tabularx}
+
+\section{Professional Summary}
+%This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+Accomplished Software Engineer with over \textbf{5 years} of expertise in application development. Specializes in technical analysis, design, development, and debugging. A proactive team player adept in development methodologies, data structures, algorithms, and multiple programming languages.
+
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Backend Development & \normalsize{Java, Spring Boot, SQL, REST/SOAP, Android, Python(Familiar), Lua(Familiar), Shell, JUnit}\\
+Frontend Development & \normalsize{HTML, CSS, Javascript}\\
+Databases & \normalsize{Oracle SQL, MySQL, MSSQL, MongoDB, Redis}\\
+Tools & \normalsize{Git, Maven, Jenkins, Docker, JIRA, Spinnaker, Graphana}\\
+Soft Skills & \normalsize{Decisive team leader, Motivated team player, Bias for action, Deliver results, Ability to work under pressure}\\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+%	EXPERIENCE
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\large{Pine Labs}} & \hfill Andheri, Mumbai \\[3pt]
+\textbf{Lead Engineer} & \hfill Jun 2024 - present \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Led the migration and transition of the newly acquired product, \href{https://www.pinelabs.com/blog/announcing-the-launch-of-pine-labs-next-gen-credit-issuing-platform-credit}{PineLabs Credit+} issuing. Coordinated closely with DEVOPS and Infrastructure-IT teams to set up the entire Credit+ Issuing application in the PineLabs environment within \textbf{2.5 months}. Enabled existing applications to run as \textbf{Docker} containerized applications on \textbf{Kubernetes}, leveraging \textbf{Jenkins} and \textbf{Spinnaker} for CI/CD.
+        \item[--] Spearheaded the replacement of Oracle Argus, RSA SecurID, and HashiVault with \textbf{KeyCloak}, \textbf{PrivacyIDEA}, and \textbf{AWS KMS}, respectively. These changes significantly \textbf{reduced licensing costs} for the organization.
+        \item[--] Addressed gaps in the encryption-decryption mechanism for inbound and outbound APIs, and implemented \textbf{payShield 10k HSM} commands to secure critical transactions.
+        %Twilio integration, OLTP exposure, GFT, Dolphin scheduler%
+        \item[--] Demonstrated exceptional leadership throughout the project lifecycle, from inception to execution, ensuring successful delivery within stipulated timelines.
+    \end{itemize}
+\end{minipage}}
+\end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\textbf{Senior Software Engineer} & \hfill Dec 2022 - Jun 2024 \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Orchestrated the comprehensive overhaul of a Payout application, replacing \textbf{RabbitMQ} with \textbf{Redis} for data streams and channels which enabled self-healing mechanisms allowing the system to autonomously recover from disruptions. As part of the refactoring process, enhanced low-level designs and implemented design patterns such as \textbf{command}, \textbf{abstract factory}, and \textbf{thread-safe singleton}. These improvements significantly boosted the application's efficiency and reliability, facilitating seamless online transactions exceeding 300 crores within a single year.
+        \item[--] Created a generic Java scheduler application to process reconciliation files received from multiple financial institutions and update the payout transaction transaction status in the database.
+        \item[--] Skillfully utilized \textbf{Apache APISIX} API Gateway to consolidate and streamline diverse API solutions within the \href{https://developers.qwikcilver.com/}{Pine Labs Issuing Business suite}, resulting in a unified and efficient API infrastructure. Engineered a robust \textbf{Single Sign-On (SSO)} feature to provide seamless and secure access to these APIs, significantly simplifying the authentication process, enhancing system cohesion, and reducing overall complexity.
+        \item[--] Developed a \textbf{Spring Boot} application from scratch to integrate with an API gateway, supporting custom API transformations according to \textbf{OpenAPI} specifications and enabling \textbf{API orchestration}.
+        \item[--] Developed a payment checkout application from scratch featuring a redirection-based payment processor. Continuously integrated \textbf{multiple payment gateways} while providing seamless and standardized API-based integration to client systems, achieving a throughput of \textbf{450 TPS}. Implemented a \textbf{delay queue system} to periodically fetch transaction statuses until they reach a terminal state, and to store failed \textbf{webhook notifications} of transaction events for retry.
+        \item[--] Collaborated with cross-functional teams including Information Security, Performance, and Quality Engineering. Resolved security vulnerabilities, including \textbf{OWASP Top 10} issues. Followed \textbf{Test Driven Development (TDD)} in building a large-scale application, significantly reducing the number of bugs. Utilized \textbf{concurrent hashmaps}, \textbf{KD tree algorithms}, and \textbf{Redis} to enhance application performance.
+        \item[--] Pioneered the development of a \textbf{custom annotation} for data logging, significantly improving debugging and application monitoring processes. This streamlined approach enhances development efficiency and ensures robust application performance.
+    \end{itemize}
+\end{minipage}}
 \end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{\large{Tata Consultancy Services}} & \hfill Thane \\[3pt]
+\textbf{Systems Engineer} & \hfill Jun 2019 - Dec 2022 \\[3pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Worked as a back-end developer in a banking application built on Spring, Apache Camel. Developed \textbf{REST APIs} from scratch. Had exposure to work with \textbf{SOAP APIs}, SOA services, Oracle DBMS, Web-server configurations, thread dumps and heap dumps.
+        \item[--] Implemented security measures to comply with PCI-DSS and prevent \textbf{MITM and Replay attacks}. Code optimizations to improve concurrency and caching efficiency. Re-designed login mechanism to allow multi-user login from a single device.
+        \item[--] Developed common components like audit logging, authentication, authorization and encryption. Also, configured CI/CD pipeline in \textbf{Jenkins} to automate the source code scanning and deployment.
+    \end{itemize}
+\end{minipage}}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Project Trainee} & \hfill Jan 2019 - Apr 2019 \\[3pt]
+\multicolumn{2}{@{}X@{}}{Developed the document extractor tool from scratch which can extract relevant details from lengthy documents i.e. Rent Agreement, Affidavit using Python, Tesseract and MongoDB.}  \\
+\end{tabularx}  
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+% \section{Projects}
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Inventory Management System} & \hfill \href{https://github.com/yashnmodi/Inventory_Management}{Link} \\
+% \medskip
+% \multicolumn{2}{@{}X@{}}{Developed RESTful web application from scratch using Spring Boot, Java8, MongoDB, JWT Authentication. State-less authentication with JWT. Applied filters for logging. Configured OTP service for generating, and validating OTPs.} \\
+% \textbf{RestOMS: Restaurant Order Management System} & \hfill \href{https://github.com/yashnmodi/RestOMS}{Link} \\
+% \medskip
+% \multicolumn{2}{@{}X@{}}{Spring MVC-based web app. Used SpringBoot for bootstrapping and Mysql for Database. It has three components - customer portal for Menu \& Order, Kitchen for preparation and Admin for management and accounting.}  \\
+% \textbf{ShareDroid: File sharing app} & \hfill \href{https://github.com/yashnmodi/ShareDroid}{Link} \\
+% \multicolumn{2}{@{}X@{}}{Developed an Android app using P2P networking which facilitates rapid sharing of any file. The top speed achieved is 4.5 MBPS.}  \\
+% \end{tabularx}
+
+\section{Projects}
+\href{https://github.com/yashnmodi/Inventory_Management}{\textbf{Inventory Management System}} \\
+Developed RESTful web application from scratch using Spring Boot, Java8, MongoDB, JWT Authentication. State-less authentication with JWT. Applied filters for logging. Configured OTP service for generating, and validating OTPs. \\ \\
+\href{https://github.com/yashnmodi/RestOMS}{\textbf{RestOMS: Restaurant Order Management System}} \\
+Spring MVC-based web app. Used SpringBoot for bootstrapping and Mysql for Database. It has three components - customer portal for Menu \& Order, Kitchen for preparation and Admin for management and accounting. \\ \\
+\href{https://github.com/yashnmodi/ShareDroid}{\textbf{ShareDroid: File sharing app}} \\
+Developed an Android app using P2P networking which facilitates rapid sharing of any file. The top speed achieved is 4.5 MBPS.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+2015 - 2019 & BE in Computer Engineering at \textbf{Gujarat Techonlogical University} \hfill (CGPA: 8.69) \\
+2013 - 2015 & Class 12th, Gujarat Higher Secondary Education Board \hfill (83.33 \%) \\
+2012 - 2013 & Class 10th, Gujarat Secondary Education Board \hfill (91.16 \%) \\ 
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+\section{Achievements}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+On the Spot Award & For making the entire source code and logging operations PCI-DSS compliant. (2022) \\
+Special Initiative Award & Received this for automating the back-end deployment using Jenkins. (2021) \\
+Applause for Team Award & For excellent performance of the team. (2021) \\
+Special Initiative Award & For delivering solutions quickly. (2019) \\
+TCS CodeVita & Cleared Round-2 of TCS CodeVita Season 7. (2018) \\
+Best Yoga Practitioner & 2nd Runner Up for performing best yoga at University level. (2016) \\
+%JNV district 2nd
+%star of the workplace
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+\section{Interests}
+\begin{tabularx}{\linewidth}{@{}X @{}X @{}X}	
+Playing badminton, volleyball & Self-improvement & Exploring Places \\
+Practising Yoga & Watching movies \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK
+%----------------------------------------------------------------------------------------
+%\section{Certificates}
+%\begin{tabularx}{\linewidth}{@{}l X@{}}	
+%Microservices with Spring Boot & Learning Docker
+%\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -202,16 +265,7 @@ long long line of blah blah that will wrap when the table fills the column width
 \printbibliography[heading=none]
 \end{refsection}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
-
 \vfill
 \center{\footnotesize Last updated: \today}
-
+        
 \end{document}
